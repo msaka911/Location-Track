@@ -48,7 +48,7 @@ const MapContainer=({ google })=>{
 
   const getTime=async(lat,lng)=>{
     try{
-      const response=await fetch("http://api.timezonedb.com/v2.1/get-time-zone?key=8FY1FBVIXOOM&format=json&by=position&lat="+lat+"&lng="+lng)
+      const response=await fetch("https://api.timezonedb.com/v2.1/get-time-zone?key=8FY1FBVIXOOM&format=json&by=position&lat="+lat+"&lng="+lng)
       if (!response.ok){
        throw new Error("something went wrong")
       }
